@@ -23,6 +23,7 @@ navbar-links:
   About Me: "aboutme"
   Research: "research"
   Teaching: "teaching"
+  CV: "cv"
 
 ################
 # --- Logo --- #

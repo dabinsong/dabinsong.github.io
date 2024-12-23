@@ -20,7 +20,6 @@ author: Dabin Song
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
   Research: "research"
   Teaching: "teaching"
   Data: "data"

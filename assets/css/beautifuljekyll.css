@@ -35,7 +35,7 @@ body {
   font-size: 1.125rem;
   color: var(--text-col);
   position: relative;
-  background-color: #ffffff; /* 상단과 하단 배경색 */
+  background-color: --page-col; /* 상단과 하단 배경색 */
   overflow-wrap: break-word;
   min-height: 100vh;
   display: flex;

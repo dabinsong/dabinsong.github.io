@@ -21,7 +21,7 @@ layout: null
   /* common CSS variables */
   --body-font: 'Lora', 'Times New Roman', serif;
   --header-font: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --mid-col: #808080;
+  --mid-col: #e0f7fa;
 }
 
 /* --- General --- */
@@ -35,7 +35,7 @@ body {
   font-size: 1.125rem;
   color: var(--text-col);
   position: relative;
-  background-color: #e0f7fa; /* 상단과 하단 배경색 */
+  background-color: #ffffff; /* 상단과 하단 배경색 */
   overflow-wrap: break-word;
   min-height: 100vh;
   display: flex;
@@ -43,9 +43,6 @@ body {
 }
 body > main {
   flex: 1;
-  background-color: #ffffff; /* 중앙 콘텐츠 배경색 */
-  margin: 0 auto; /* 중앙 정렬 */
-  width: 100%; /* 콘텐츠가 화면 너비를 채우도록 */
 }
 p {
   line-height: 1.5;

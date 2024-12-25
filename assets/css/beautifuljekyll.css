@@ -35,7 +35,7 @@ body {
   font-size: 1.125rem;
   color: var(--text-col);
   position: relative;
-  background-color: --page-col;
+  background-color: var(--page-col);
   overflow-wrap: break-word;
   min-height: 100vh;
   display: flex;

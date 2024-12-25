@@ -83,7 +83,7 @@ blockquote p:first-child {
   margin-top: 0;
 }
 .jumbotron {
-  background: #EEE;
+  background: none;
 }
 hr.small {
   max-width: 6.25rem;

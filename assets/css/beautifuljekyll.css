@@ -18,9 +18,9 @@ layout: null
   --footer-link-col: {{ site.footer-link-col | default: "#404040" }};
   --footer-hover-col: {{ site.footer-hover-col | default: "#0085A1" }};
 
-  /* common CSS variables */
-  --body-font: 'Merriweather', serif;
-  --header-font: 'Open Sans', sans-serif;
+ /* common CSS variables */
+  --body-font: 'Lora', 'Merriweather', serif;
+  --header-font: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --mid-col: #e0f7fa;
 }
 

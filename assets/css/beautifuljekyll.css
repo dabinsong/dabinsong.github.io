@@ -45,6 +45,12 @@ body {
   display: flex;
   flex-direction: column;
 }
+.container {
+    background-color: #ffffff; /* 중앙 영역 배경색 */
+    padding: 20px; /* 내부 여백 */
+    border-radius: 10px; /* 선택 사항: 모서리 둥글게 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 선택 사항: 그림자 효과 */
+}
 body > main {
   flex: 1;
 }

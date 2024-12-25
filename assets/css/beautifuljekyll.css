@@ -10,17 +10,17 @@ layout: null
   --text-col: {{ site.text-col | default: "#404040" }};
   --link-col: {{ site.link-col | default: "#008AFF" }};
   --hover-col: {{ site.hover-col | default: "#0085A1" }};
-  --navbar-col: {{ site.navbar-col | default: "#EAEAEA" }};
+  --navbar-col: {{ site.navbar-col | default: "#E3F2FD" }};
   --navbar-text-col: {{ site.navbar-text-col | default: "#404040" }};
   --navbar-border-col: {{ site.navbar-border-col | default: "#DDDDDD" }};
-  --footer-col: {{ site.footer-col | default: "#EAEAEA" }};
+  --footer-col: {{ site.footer-col | default: "#E3F2FD" }};
   --footer-text-col: {{ site.footer-text-col | default: "#777777" }};
   --footer-link-col: {{ site.footer-link-col | default: "#404040" }};
   --footer-hover-col: {{ site.footer-hover-col | default: "#0085A1" }};
 
   /* common CSS variables */
-  --body-font: 'Lora', 'Times New Roman', serif;
-  --header-font: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --body-font: 'Merriweather', serif;
+  --header-font: 'Roboto', sans-serif;
   --mid-col: #e0f7fa;
 }
 

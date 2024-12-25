@@ -44,11 +44,8 @@ body {
 body > main {
   flex: 1;
   background-color: #ffffff; /* 중앙 콘텐츠 배경색 */
-  margin: 20px auto; /* 중앙 콘텐츠 위아래 간격 */
-  max-width: 800px; /* 중앙 콘텐츠 너비 제한 */
-  padding: 20px; /* 내부 여백 */
-  border-radius: 10px; /* 모서리 둥글게 */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  margin: 0 auto; /* 중앙 정렬 */
+  width: 100%; /* 콘텐츠가 화면 너비를 채우도록 */
 }
 p {
   line-height: 1.5;

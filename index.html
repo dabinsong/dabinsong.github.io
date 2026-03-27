@@ -1,14 +1,347 @@
 ---
-layout: home
-title: Dabin Song
+layout: none
 ---
-<div style="text-align: center;">
-    <img src="assets/img/my-photo.jpg" alt="My Photo" style="border-radius: 50%; width: 150px; height: 150px;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dabin Song</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --accent:       #0284C7;
+      --accent-mid:   #38BDF8;
+      --accent-light: #E0F2FE;
+      --yellow:       #FEF9C3;
+      --yellow-text:  #92400E;
+      --text:         #0f172a;
+      --text-muted:   #64748B;
+      --bg:           #FFFFFF;
+      --surface:      #F8FAFC;
+      --border:       #E2E8F0;
+      --nav-bg:       #F8FAFC;
+      --nav-text:     #0f172a;
+      --radius:       12px;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── NAV ─────────────────────────────── */
+    nav {
+      background: var(--nav-bg);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-name {
+      color: var(--nav-text);
+      font-family: 'Lora', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      letter-spacing: 0.01em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      transition: color 0.15s;
+    }
+
+    .nav-links a:hover { color: var(--accent); }
+
+    /* ── HERO ────────────────────────────── */
+    .hero {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 80px 2rem 64px;
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 56px;
+      align-items: start;
+    }
+
+    .hero-photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--white);
+      box-shadow: 0 8px 32px rgba(15,23,42,0.14);
+    }
+
+    .hero-name {
+      font-family: 'Lora', serif;
+      font-size: 2.4rem;
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 0.35rem;
+    }
+
+    .hero-title {
+      color: var(--accent-mid);
+      font-size: 0.95rem;
+      font-weight: 500;
+      margin-bottom: 1.2rem;
+      letter-spacing: 0.03em;
+    }
+
+    .hero-bio {
+      color: var(--text-muted);
+      font-size: 0.975rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      max-width: 520px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .tag {
+      padding: 0.2rem 0.7rem;
+      border-radius: 100px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+    .tag-blue {
+      background: var(--accent-light);
+      color: var(--accent);
+    }
+    .tag-yellow {
+      background: var(--yellow);
+      color: var(--yellow-text);
+    }
+
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 0.45rem 0.9rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--white);
+      transition: all 0.15s;
+    }
+
+    .social-link:hover {
+      color: var(--accent);
+      border-color: var(--accent-mid);
+      background: var(--accent-light);
+    }
+
+    /* ── DIVIDER ─────────────────────────── */
+    .divider {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      border: none;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── CARDS ───────────────────────────── */
+    .cards {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 2rem 80px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.6rem 1.75rem;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+      display: block;
+    }
+
+    .card:hover {
+      border-color: var(--accent-mid);
+      box-shadow: 0 4px 20px rgba(56,189,248,0.15);
+      transform: translateY(-2px);
+      background: var(--accent-light);
+    }
+
+    .card-icon {
+      font-size: 1.4rem;
+      margin-bottom: 0.7rem;
+      display: block;
+    }
+
+    .card-title {
+      font-family: 'Lora', serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    .card-desc {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      line-height: 1.65;
+    }
+
+    /* ── FOOTER ──────────────────────────── */
+    footer {
+      margin-top: auto;
+      border-top: 1px solid var(--border);
+      padding: 1.25rem 2rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+    }
+
+    /* ── RESPONSIVE ──────────────────────── */
+    @media (max-width: 620px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 48px 1.5rem;
+        text-align: center;
+      }
+      .hero-photo { margin: 0 auto; }
+      .hero-bio   { max-width: 100%; }
+      .tags, .social-links { justify-content: center; }
+      .cards {
+        grid-template-columns: 1fr;
+        padding: 40px 1.5rem 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-name">Dabin Song</a>
+    <ul class="nav-links">
+      <li><a href="/research">Research</a></li>
+      <li><a href="/teaching">Teaching</a></li>
+      <li><a href="/data">Data</a></li>
+      <li><a href="/cv">CV</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <img src="/my-photo.JPG" alt="Dabin Song" class="hero-photo">
+  </div>
+  <div>
+    <h1 class="hero-name">Dabin Song</h1>
+    <p class="hero-title">PhD Student in Economics &middot; UC Irvine</p>
+    <p class="hero-bio">
+      I am a first-year PhD student in Economics at the University of California, Irvine.
+      My research interests are in applied microeconomics, labor economics, and development.
+      I am also looking to deepen my understanding of labor search theory.
+    </p>
+    <div class="tags">
+      <span class="tag tag-blue">Labor Economics</span>
+      <span class="tag tag-blue">Applied Microeconomics</span>
+      <span class="tag tag-yellow">Development</span>
+      <span class="tag tag-yellow">Labor Search Theory</span>
+    </div>
+    <div class="social-links">
+      <a href="mailto:dabins2@uci.edu" class="social-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/></svg>
+        Email
+      </a>
+      <a href="https://github.com/dabinsong" class="social-link" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg>
+        GitHub
+      </a>
+      <a href="https://linkedin.com/in/dabin-song" class="social-link" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg>
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- CARDS -->
+<div class="cards">
+  <a href="/research" class="card">
+    <span class="card-icon">📄</span>
+    <div class="card-title">Research</div>
+    <p class="card-desc">Working papers, work in progress, and research interests.</p>
+  </a>
+  <a href="/teaching" class="card">
+    <span class="card-icon">🎓</span>
+    <div class="card-title">Teaching</div>
+    <p class="card-desc">Courses taught and teaching materials.</p>
+  </a>
+  <a href="/data" class="card">
+    <span class="card-icon">📊</span>
+    <div class="card-title">Data</div>
+    <p class="card-desc">Datasets and replication materials.</p>
+  </a>
+  <a href="/cv" class="card">
+    <span class="card-icon">📋</span>
+    <div class="card-title">Curriculum Vitae</div>
+    <p class="card-desc">Full academic CV in PDF.</p>
+  </a>
 </div>
 
-## Welcome to My Website!
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Dabin Song &middot; University of California, Irvine</p>
+</footer>
 
-Hi, my name is Dabin Song and I am a first year PhD student in Economics at the University of California, Irvine.
-My research interests are mainly in applied microeconomics, labor, and development.
-I am also looking forward to adding more depth to my research by studying more about labor search theory.
-Explore my work in [AI](#), [Data Science](#), and [Teaching](#).
+</body>
+</html>

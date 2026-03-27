@@ -191,9 +191,14 @@ layout: none
       max-width: 900px;
       margin: 0 auto;
       padding: 48px 2rem 80px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 1rem;
+    }
+
+    .card {
+      flex: 0 0 calc(33.333% - 0.7rem);
     }
 
     .card {
@@ -255,8 +260,10 @@ layout: none
       .hero-bio   { max-width: 100%; }
       .tags, .social-links { justify-content: center; }
       .cards {
-        grid-template-columns: 1fr;
         padding: 40px 1.5rem 60px;
+      }
+      .card {
+        flex: 0 0 100%;
       }
     }
   </style>
@@ -272,6 +279,7 @@ layout: none
       <li><a href="/teaching">Teaching</a></li>
       <li><a href="/data">Data</a></li>
       <li><a href="/cv">CV</a></li>
+      <li><a href="/hobby-projects">Hobby Projects</a></li>
     </ul>
   </div>
 </nav>
@@ -292,8 +300,6 @@ layout: none
     <div class="tags">
       <span class="tag tag-blue">Labor Economics</span>
       <span class="tag tag-blue">Applied Microeconomics</span>
-      <span class="tag tag-yellow">Development</span>
-      <span class="tag tag-yellow">Labor Search Theory</span>
     </div>
     <div class="social-links">
       <a href="mailto:dabins2@uci.edu" class="social-link">
@@ -335,6 +341,11 @@ layout: none
     <span class="card-icon">📋</span>
     <div class="card-title">Curriculum Vitae</div>
     <p class="card-desc">Full academic CV in PDF.</p>
+  </a>
+  <a href="/hobby-projects" class="card">
+    <span class="card-icon">🛠️</span>
+    <div class="card-title">Hobby Projects</div>
+    <p class="card-desc">Personal projects, experiments, and fun things I build outside of research.</p>
   </a>
 </div>
 

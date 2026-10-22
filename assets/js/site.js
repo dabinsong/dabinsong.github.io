@@ -22,14 +22,7 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  // ── Cursor spotlight + card glow ─────────────────────────
-  if (!reduceMotion) {
-    window.addEventListener('pointermove', function (e) {
-      root.style.setProperty('--mx', e.clientX + 'px');
-      root.style.setProperty('--my', e.clientY + 'px');
-    }, { passive: true });
-  }
-
+  // ── Card glow ────────────────────────────────────────────
   document.querySelectorAll('.card').forEach(function (card) {
     card.addEventListener('pointermove', function (e) {
       var r = card.getBoundingClientRect();

@@ -28,7 +28,6 @@ layout: null
 <body>
 
 <div class="progress" aria-hidden="true"></div>
-<div class="spotlight" aria-hidden="true"></div>
 
 <!-- NAV -->
 <header class="nav-wrap">
@@ -55,8 +54,6 @@ layout: null
 
   <!-- HERO / ABOUT -->
   <section class="hero" id="about">
-    <div class="blobs" aria-hidden="true"><span></span><span></span><span></span></div>
-
     <div class="hero-inner">
       <div class="hero-text">
         <p class="status reveal"><span class="dot"></span>{{ p.role }} · {{ p.affiliation }}</p>
@@ -82,7 +79,6 @@ layout: null
       </div>
 
       <div class="hero-photo reveal">
-        <div class="photo-ring"></div>
         <img src="{{ p.photo | relative_url }}" alt="Portrait of {{ p.name }}" width="280" height="280">
       </div>
     </div>

@@ -8,9 +8,11 @@ email: dabins2@uci.edu
 
 # Supports Markdown.
 bio: >-
-  I am a third-year PhD student in Economics at the University of California, Irvine.
-  My research interests are in applied microeconomics, labor economics,
-  economics of education, public economics, and experimental economics.
+  I am a third-year PhD student in Economics at UC Irvine. I study how policies and
+  new technologies shape labor markets — from pay transparency laws and workplace AI
+  adoption to tax credits and education policy. My work combines administrative data
+  with quasi-experimental methods, and my broader interests span applied
+  microeconomics, labor, education, public, and experimental economics.
 
 photo: /assets/img/my-photo.JPG
 
@@ -19,7 +21,5 @@ cv_url: /assets/CV_Dabin_Song.pdf
 cv_embed: /assets/CV_Dabin_Song.pdf
 
 links:
-  - label: GitHub
-    url: https://github.com/dabinsong
   - label: LinkedIn
     url: https://linkedin.com/in/dabin-song

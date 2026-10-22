@@ -173,7 +173,7 @@ main, .footer { position: relative; z-index: 1; }
   position: relative;
   min-height: 100svh;
   display: flex; flex-direction: column; justify-content: center;
-  padding: 120px 0 0;
+  padding: 120px 0 64px;
   overflow: hidden;
 }
 
@@ -266,26 +266,6 @@ a:hover .arrow, button:hover .arrow { transform: translate(2px, -2px); }
 }
 @keyframes spin { to { transform: rotate(360deg); } }
 
-/* Marquee */
-.marquee {
-  margin-top: clamp(56px, 10vh, 110px);
-  border-block: 1px solid var(--line);
-  overflow: hidden;
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
-          mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
-}
-.marquee-track {
-  display: flex; width: max-content;
-  padding: 18px 0;
-  font-family: var(--serif); font-size: clamp(1.4rem, 3vw, 2rem); white-space: nowrap;
-  animation: marquee 40s linear infinite;
-}
-/* Spacing via padding (not gap) so -50% lands exactly on a copy boundary. */
-.marquee-track span { padding-right: 28px; }
-.marquee-track .sep { color: var(--accent-2); font-size: .7em; align-self: center; }
-.marquee:hover .marquee-track { animation-play-state: paused; }
-@keyframes marquee { to { transform: translateX(-50%); } }
-
 /* ── Sections ────────────────────────────────────────────── */
 .section {
   max-width: var(--max); margin: 0 auto;
@@ -345,6 +325,7 @@ a:hover .arrow, button:hover .arrow { transform: translate(2px, -2px); }
 .badge-published { background: color-mix(in srgb, var(--accent-3) 16%, transparent); color: var(--accent-3); }
 .badge-working   { background: color-mix(in srgb, var(--accent) 14%, transparent);   color: var(--accent); }
 .badge-wip       { background: color-mix(in srgb, var(--accent-2) 16%, transparent); color: var(--accent-2); }
+.badge-policy    { background: color-mix(in srgb, var(--muted) 14%, transparent);    color: var(--muted); }
 
 .paper-title { font-size: 1.22rem; font-weight: 500; line-height: 1.35; letter-spacing: -.01em; }
 .paper-sub { color: var(--muted); font-size: .94rem; margin-top: 4px; }
@@ -384,6 +365,13 @@ a:hover .arrow, button:hover .arrow { transform: translate(2px, -2px); }
 .t-term { color: var(--muted); padding-top: 4px; }
 .timeline h3 { font-size: 1.12rem; font-weight: 500; }
 .timeline p { color: var(--muted); font-size: .94rem; }
+.timeline .t-note { font-size: .9rem; margin-top: 6px; max-width: 40rem; }
+
+.subhead {
+  font-family: var(--mono); font-size: .78rem; font-weight: 500;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--muted);
+  margin: 64px 0 20px;
+}
 
 /* Project cards */
 .grid {

@@ -1,22 +1,43 @@
 # Research entries, shown in the order listed.
-# status: published | working | wip   (controls the badge and the filter chips)
-# abstract and coauthors are optional. links is an optional list of {label, url}.
-#
-# The entries below are placeholders. Replace or delete them.
+# status: published | working | wip | policy   (controls the badge and the filter chips;
+#         a chip only appears when at least one entry has that status)
+# year, coauthors, venue, note, abstract and links are optional.
+# links is a list of {label, url}.
 
-- title: "Paper title goes here"
-  status: working
-  year: 2026
-  coauthors: "with Co-author Name"
-  abstract: >-
-    A short abstract of the paper. Two to four sentences describing the question,
-    the data and identification strategy, and the main finding.
-  links:
-    - label: PDF
-      url: "#"
-
-- title: "Another project in progress"
+- title: "Workplace AI Use and the Content of Labor Demand"
   status: wip
-  year: 2026
-  abstract: >-
-    One or two sentences on the idea and where the project currently stands.
+
+- title: "Pay Transparency and Commitment"
+  status: wip
+
+- title: "The EITC and Youth Labor Supply: Evidence from Korea’s 2019 Reform"
+  status: wip
+  coauthors: "with Seongjin Jin"
+
+- title: "One Year of No Tax on Tips in the U.S.: Policy Design and Key Issues"
+  status: policy
+  year: Nov 2026
+  venue: "International Labor Brief, Korea Labor Institute"
+  note: "In Korean · Forthcoming"
+
+- title: "Three Years of a ‘Low-Hire, Low-Fire’ U.S. Labor Market"
+  status: policy
+  year: Sep 2026
+  venue: "International Labor Brief, Korea Labor Institute"
+  note: "In Korean"
+  links:
+    - label: KLI
+      url: "https://www.kli.re.kr/kli/prdclView.es?pblct_sn=10306&mid=a10103030000"
+    - label: "PDF (p. 45)"
+      url: "https://www.kli.re.kr/pdfPreviewDownload?fileName=CD80CA1B1B51E37049258E80003FA274_8.pdf&fileNameOrg=%EA%B5%AD%EC%A0%9C%EB%85%B8%EB%8F%99%EB%B8%8C%EB%A6%AC%ED%94%84%202026%EB%85%84%209%EC%9B%94%ED%98%B8_web.pdf&filePath1=jsphome/DATA/pblctList/issue/CD80CA1B1B51E37049258E80003FA274"
+
+- title: "Wage Transparency Policies and Changes in the Structure of the U.S. Hiring Market"
+  status: policy
+  year: Jul 2026
+  venue: "International Labor Brief, Korea Labor Institute"
+  note: "In Korean"
+  links:
+    - label: KLI
+      url: "https://www.kli.re.kr/kli/prdclView.es?pblct_sn=10292&mid=a10103030000"
+    - label: "PDF (p. 41)"
+      url: "https://www.kli.re.kr/pdfPreviewDownload?fileName=71B0368C35866F8549258E42002B1FC1_8.pdf&fileNameOrg=%EA%B5%AD%EC%A0%9C%EB%85%B8%EB%8F%99%EB%B8%8C%EB%A6%AC%ED%94%84%202026%EB%85%84%207%EC%9B%94%ED%98%B8_web.pdf&filePath1=jsphome/DATA/pblctList/issue/71B0368C35866F8549258E42002B1FC1"

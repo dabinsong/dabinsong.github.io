@@ -1,17 +1,13 @@
 # Data releases and hobby projects, shown as cards.
-# type: data | hobby   (controls the label and the filter chips)
-# url and tags are optional.
+# The Projects section (and its nav link) is hidden while this list is empty.
 #
-# The entries below are placeholders. Replace or delete them.
+# type: data | hobby   (controls the label and the filter chips)
+# url and tags are optional. Example:
+#
+# - title: "Dataset name"
+#   type: data
+#   description: "What the dataset covers, its source, and what it can be used for."
+#   tags: [CSV, Replication]
+#   url: "https://..."
 
-- title: "Dataset name"
-  type: data
-  description: "What the dataset covers, its source, and what it can be used for."
-  tags: [CSV, Replication]
-  url: "#"
-
-- title: "Hobby project"
-  type: hobby
-  description: "Something I built for fun outside of research."
-  tags: [Python]
-  url: "https://github.com/dabinsong"
+[]

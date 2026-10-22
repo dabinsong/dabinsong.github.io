@@ -1,9 +1,22 @@
 # Teaching entries, most recent first.
 # links is an optional list of {label, url}.
-#
-# The entry below is a placeholder. Replace or delete it.
 
 - role: Teaching Assistant
-  course: "ECON 000 — Course Name"
+  course: "Applied Econometrics I (ECON 122A)"
   institution: UC Irvine
-  term: Fall 2026
+  term: Fall 2025 & Fall 2026
+
+- role: Teaching Assistant
+  course: "Behavioral Economics (ECON 115)"
+  institution: UC Irvine
+  term: Winter 2026
+
+- role: Teaching Assistant
+  course: "Impact Evaluation Methods"
+  institution: KDI School
+  term: 2022–2023
+
+- role: Stata Tutor
+  course: "Data Analysis Support Center"
+  institution: KDI School
+  term: 2022–2023

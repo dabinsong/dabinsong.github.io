@@ -14,8 +14,9 @@ bio: >-
 
 photo: /assets/img/my-photo.JPG
 
-cv_url: https://www.dropbox.com/scl/fi/cl1ywo5zv47vbznaxq3ve/CV_Dabin_Song.pdf?rlkey=uhhlykacjd2zz0zgg4z4asa0x&dl=0
-cv_embed: https://www.dropbox.com/scl/fi/cl1ywo5zv47vbznaxq3ve/CV_Dabin_Song.pdf?rlkey=uhhlykacjd2zz0zgg4z4asa0x&raw=1
+# To update the CV, replace assets/CV_Dabin_Song.pdf (keep the same file name).
+cv_url: /assets/CV_Dabin_Song.pdf
+cv_embed: /assets/CV_Dabin_Song.pdf
 
 links:
   - label: GitHub

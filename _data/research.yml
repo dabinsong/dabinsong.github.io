@@ -1,0 +1,22 @@
+# Research entries, shown in the order listed.
+# status: published | working | wip   (controls the badge and the filter chips)
+# abstract and coauthors are optional. links is an optional list of {label, url}.
+#
+# The entries below are placeholders. Replace or delete them.
+
+- title: "Paper title goes here"
+  status: working
+  year: 2026
+  coauthors: "with Co-author Name"
+  abstract: >-
+    A short abstract of the paper. Two to four sentences describing the question,
+    the data and identification strategy, and the main finding.
+  links:
+    - label: PDF
+      url: "#"
+
+- title: "Another project in progress"
+  status: wip
+  year: 2026
+  abstract: >-
+    One or two sentences on the idea and where the project currently stands.

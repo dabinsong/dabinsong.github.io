@@ -1,9 +1,6 @@
 ---
-layout: custom_page
-title: "Hobby Projects"
+layout: redirect
 permalink: /hobby-projects/
+redirect_to: "/#projects"
+sitemap: false
 ---
-
-## Hobby Projects
-
-Content coming soon.

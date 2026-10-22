@@ -20,10 +20,10 @@ author: Dabin Song
 ###############################################
 
 navbar-links:
-  Research: "research"
-  Teaching: "teaching"
-  Data: "data"
-  Curriculum Vitae: "cv"
+  Research: "/#research"
+  Teaching: "/#teaching"
+  Projects: "/#projects"
+  CV: "/#cv"
 
 ################
 # --- Logo --- #

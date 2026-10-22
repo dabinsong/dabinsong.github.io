@@ -1,23 +1,6 @@
 ---
-layout: custom_page
-title: "Teaching"
+layout: redirect
 permalink: /teaching/
+redirect_to: "/#teaching"
+sitemap: false
 ---
-
-## Current Courses
-- **Course 1**: Course name and description  
-  [Syllabus](#) | [Lecture Notes](#) | [Assignments](#)
-
-- **Course 2**: Course name and description  
-  [Syllabus](#) | [Lecture Notes](#) | [Assignments](#)
-
-## Past Courses
-- **Course 3 (Year)**: Course name and description  
-  Topics covered: Topic 1, Topic 2, Topic 3.
-
-- **Course 4 (Year)**: Course name and description  
-  Topics covered: Topic 1, Topic 2, Topic 3.
-
-## Resources
-- [Additional Reading Material](#)
-- [External Learning Platforms](#)
